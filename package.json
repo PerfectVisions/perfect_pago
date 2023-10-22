@@ -5,7 +5,7 @@
   },
   "name": "perfectpago",
   "description": "A Simple integration for mercadopago",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "main": "index.js",
   "scripts": {
     "dev": "node build/development.js"

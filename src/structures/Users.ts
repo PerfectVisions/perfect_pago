@@ -5,7 +5,7 @@ interface UserOptions {
     site_id: 'MPE' | 'MLU' | 'MLA' | 'MLC' | 'MCO' | 'MLB' | 'MLM'
 }
 
-export default class uSERS {
+export default class Users {
     BASE_URL: string
     accessToken: any
     constructor(options: PaymentStructureOptions) {
