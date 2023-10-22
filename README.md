@@ -8,7 +8,7 @@ const MercadoPago = new PerfectPago({ accessToken: "your-access-token-here" })
 
 MercadoPago.payments.create(options) // criar pagamentos
 MercadoPago.payments.get(id) // obter pagamento
-MergadoPago.payments.cancel(id) // cancelar pagamento
+MercadoPago.payments.cancel(id) // cancelar pagamento
 MercadoPago.payments.refund(id, amount) // reembolsar pagamento
 
 // Clientes
