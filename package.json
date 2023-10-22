@@ -13,6 +13,7 @@
   "keywords": ["mercadopago", "payments", "brasil", "pagamentos"],
   "author": "tysaiw",
   "license": "ISC",
+  
   "repository": {
     "url": "https://github.com/PerfectVisions/perfect_pago.git"
   },
