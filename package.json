@@ -5,7 +5,7 @@
   },
   "name": "perfectpago",
   "description": "A Simple integration for mercadopago",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,6 @@
   "license": "ISC",
   "repository": {
     "url": "https://github.com/PerfectVisions/perfect_pago.git"
-  }
+  },
+  "homepage": "https://jujuba.website/"
 }
