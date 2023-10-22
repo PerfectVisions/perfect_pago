@@ -4,6 +4,7 @@
     "typescript": "^5.2.2"
   },
   "name": "perfectpago",
+  "type": "module",
   "description": "A Simple integration for mercadopago",
   "version": "1.1.4",
   "main": "index.js",
@@ -13,7 +14,7 @@
   "keywords": ["mercadopago", "payments", "brasil", "pagamentos"],
   "author": "tysaiw",
   "license": "ISC",
-  
+
   "repository": {
     "url": "https://github.com/PerfectVisions/perfect_pago.git"
   },
