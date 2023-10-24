@@ -21,6 +21,9 @@ MercadoPago.customers.update(id, options) // Atualizar dados do cliente
 // Users
 
 MercadoPago.users.create(options) // Criar usuário de testes
+
+// Oauth 2
+MercadoPago.oauth.update(options) // cria e atualiza refresh tokens e tokens para usar OAuth.
 ```
 
 # Descubra mais em:
