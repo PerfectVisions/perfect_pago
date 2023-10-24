@@ -10,6 +10,7 @@ MercadoPago.payments.create(options) // criar pagamentos
 MercadoPago.payments.get(id) // obter pagamento
 MercadoPago.payments.cancel(id) // cancelar pagamento
 MercadoPago.payments.refund(id, amount) // reembolsar pagamento
+MercadoPago.payments.payment_methods.get() // Obter todos os métodos de pagamentos.
 
 // Clientes
 MercadoPago.customers.create(options) // Criar cliente

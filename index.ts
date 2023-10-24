@@ -4,7 +4,7 @@ import Payments from './src/structures/Payments'
 import Cards from './src/structures/Cards'
 import Customers from './src/structures/Customers'
 import PaymentStructureOptions from './src/interfaces/payments/PaymentStrucutureOptions'
-
+import PaymentMethods from './src/structures/PaymentsMethods'
 export default class PerfectPago {
     payments: Payments;
     refunds: Refunds;
@@ -21,5 +21,6 @@ export {
     Payments,
     Cards,
     Customers,
-    Client
+    Client,
+    PaymentMethods
 }
