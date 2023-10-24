@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "target": "es2017",            /* Define o nível de linguagem ECMAScript desejado. */
-    "module": "esnext",            /* Use "esnext" para módulos ESM. */
+    "module": "CommonJS",            /* Use "esnext" para módulos ESM. */
     "esModuleInterop": true,       /* Se você deseja compatibilidade com módulos CommonJS, pode manter isso como true. */
     "forceConsistentCasingInFileNames": true,
     "strict": true,                /* Habilita verificações estritas de tipo. */
-    "skipLibCheck": true
+    "skipLibCheck": true,
   }
 }

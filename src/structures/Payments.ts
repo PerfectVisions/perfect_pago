@@ -1,11 +1,14 @@
 import PaymentStructureOptions from "../interfaces/payments/PaymentStrucutureOptions"
 import PaymentCreateBody from '../interfaces/payments/PaymentCreateBody'
+import PaymentMethods from "./PaymentsMethods"
 export default class Payments {
     BASE_URL: string
     accessToken: any
+    payment_methods: PaymentMethods
     constructor(options: PaymentStructureOptions) {
         this.accessToken = options.accessToken
         this.BASE_URL = ' https://api.mercadopago.com'
+        this.payment_methods = new PaymentMethods({ accessToken: this.accessToken })
     }
 
     /**

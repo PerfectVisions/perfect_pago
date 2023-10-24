@@ -4,9 +4,8 @@
     "typescript": "^5.2.2"
   },
   "name": "perfectpago",
-  "type": "module",
   "description": "A Simple integration for mercadopago",
-  "version": "1.1.4",
+  "version": "1.1.8",
   "main": "index.js",
   "scripts": {
     "dev": "node build/development.js"
