@@ -21,9 +21,21 @@ MercadoPago.customers.update(id, options) // Atualizar dados do cliente
 // Users
 
 MercadoPago.users.create(options) // Criar usuário de testes
+MercadoPago.users.stores.create(options) //criar loja
+MercadoPago.users.stores.get(user_id) //obter loja de um usuário
+MercadoPago.users.stores.update(user_id, options) //atualizar loja
+MercadoPago.users.stores.fetch(user_id) //buscar lojas de um usuário
+MercadoPago.users.stores.delete(id) //deletar loja por ID
 
 // Oauth 2
 MercadoPago.oauth.update(options) // cria e atualiza refresh tokens e tokens para usar OAuth.
+
+// Lojas
+MercadoPago.stores.create(options) //criar loja
+MercadoPago.stores.get(user_id) //obter loja de um usuário
+MercadoPago.stores.update(user_id, options) //atualizar loja
+MercadoPago.stores.fetch(user_id) //buscar lojas de um usuário
+MercadoPago.stores.delete(id) //deletar loja por ID
 ```
 
 # Descubra mais em:
