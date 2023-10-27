@@ -5,14 +5,12 @@
   },
   "name": "perfectpago",
   "description": "A Simple integration for mercadopago",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "main": "index.js",
   "engines": {
     "node": ">=18.0.0"
   },
-  "scripts": {
-    "dev": "node build/development.js"
-  },
+
   "keywords": ["mercadopago", "payments", "brasil", "pagamentos"],
   "author": "tysaiw",
   "license": "ISC",
