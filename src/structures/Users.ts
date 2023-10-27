@@ -1,4 +1,5 @@
 import PaymentStructureOptions from "../interfaces/payments/PaymentStrucutureOptions"
+import Stores from "./Stores"
 
 interface UserOptions {
     description: string,
@@ -7,10 +8,12 @@ interface UserOptions {
 
 export default class Users {
     BASE_URL: string
-    accessToken: any
+    accessToken: string
+    stores: Stores
     constructor(options: PaymentStructureOptions) {
         this.accessToken = options.accessToken
         this.BASE_URL = ' https://api.mercadopago.com'
+        this.stores = new Stores({ accessToken: this.accessToken})
     }
 
     /**

@@ -1,11 +1,13 @@
 import PaymentStructureOptions from "../interfaces/payments/PaymentStrucutureOptions"
-import CardUpdateOptions from '../interfaces/customers/Cards'
-export default class Cards {
+import CreateStoreOptions from "../interfaces/stores/CreateStoreOptions"
+export default class Stores {
     BASE_URL: string
     accessToken: any
+    user_id?: string | null
     constructor(options: PaymentStructureOptions) {
         this.accessToken = options.accessToken
         this.BASE_URL = ' https://api.mercadopago.com'
+        this.user_id = null
     }
 
     /**
@@ -26,13 +28,13 @@ export default class Cards {
 
     /**
      * 
-     * @param {string} id  - CARD ID
+     * @param {string} user_id  - CARD ID
      * @param {CardUpdateOptions} options - Options
      * @returns 
      */
 
-    async create(id: string, options: CardUpdateOptions): Promise<void> {
-        const data = await fetch(`${this.BASE_URL}/users/${id}/stores`, {
+    async create(user_id: string, options: CreateStoreOptions): Promise<void> {
+        const data = await fetch(`${this.BASE_URL}/users/${user_id || this.user_id}/stores`, {
             method: "POST",
             headers: {
                 'Authorization': `Bearer ${this.accessToken}`
@@ -42,21 +44,33 @@ export default class Cards {
         return await data.json()
     }
 
-
-
-    /**
-     * 
-     * @param {string} customer_id - Customer ID
-     * @param {string} id - Card ID
-     * @returns 
-     */
-
-    async delete(customer_id: string, id: string): Promise<void> {
-        const data = await fetch(`${this.BASE_URL}/v1/customers/${customer_id}/cards/${id}`, {
-            method: "DELETE",
+    async update(user_id: string, id: string,  options: CreateStoreOptions): Promise<void> {
+        const data = await fetch(`${this.BASE_URL}/users/${user_id  || this.user_id}/stores/${id}`, {
+            method: "PUT",
             headers: {
                 'Authorization': `Bearer ${this.accessToken}`
             },
+            body: JSON.stringify(options)
+        })
+        return await data.json()
+    }
+
+    async delete( id: string, user_id?: string): Promise<void> {
+        const data = await fetch(`${this.BASE_URL}/users/${user_id || this.user_id}/stores/${id}`, {
+            method: "DELETE",
+            headers: {
+                'Authorization': `Bearer ${this.accessToken}`
+            }
+        })
+        return await data.json()
+    }
+
+    async fetch(user_id?: string): Promise<void> {
+        const data = await fetch(`${this.BASE_URL}/users/${user_id || this.user_id}/stores/search`, {
+            method: "GET",
+            headers: {
+                'Authorization': `Bearer ${this.accessToken}`
+            }
         })
         return await data.json()
     }
