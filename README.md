@@ -1,4 +1,7 @@
-# Exemplo
+
+<div align="center">
+  <img src="./images/jupayments.png">
+</div>
 
 ```js
 import PerfectPago from 'perfectpago'
